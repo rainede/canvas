@@ -14,12 +14,11 @@
 
       img.onload = function(){
         console.log("Loaded image");
-        ctx.drawImage(imgt , 0, 0, c.width, c.height);
-        var savedImg = c.toDataURL(); 
-        window.open(savedImg);
-      }
 
-      img.src ="./wistful.jpg"
+      ctx.fillRect(100,100,100,100);
+
+      ctx.strokeRect(50, 50, 50, 50);
+
     </script>
   </body>
 </html>
