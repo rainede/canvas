@@ -10,9 +10,12 @@
       var c = document.querySelector("#canv");
       var ctx = c.getContext("2d");
 
-      ctx.fillRect(100,100,100,100);
+      // start at (0,0) draw a 50px X 50px pink rectangle
+      ctx.fillStyle= "pink";
+      ctx.fillRect(0,0,50,50);
 
-      ctx.strokeRect(50, 50, 50, 50);
+      // start at (0,0) and clear a 25px X 25px rectangle
+      ctx.clearRect(0, 0, 25, 25);
 
     </script>
   </body>
