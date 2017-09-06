@@ -10,16 +10,10 @@
       var c = document.querySelector("#canv");
       var ctx = c.getContext("2d");
 
-      var img = new Image();
+      ctx.fillRect(100,100,100,100);
 
-      img.onload = function(){
-        console.log("Loaded image");
-        ctx.drawImage(imgt , 0, 0, c.width, c.height);
-        var savedImg = c.toDataURL(); 
-        window.open(savedImg);
-      }
+      ctx.strokeRect(50, 50, 50, 50);
 
-      img.src ="./wistful.jpg"
     </script>
   </body>
 </html>
